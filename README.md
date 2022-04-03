@@ -1,5 +1,5 @@
-# KDUI - Padding idea (No longer to date, renaming branch to padding-margin)
-We upgraded padding from Bootstrap to another level! Now, you can set padding up to 128px!
+# KDUI - Padding & Margin idea
+We upgraded padding and margin from Bootstrap to another level! Now, you can set padding or margin up to 128px!
 
 # Example
 ```html
@@ -27,4 +27,11 @@ We upgraded padding from Bootstrap to another level! Now, you can set padding up
 .pb-... BOTTOM
 .pl-... LEFT
 .pr-... RIGHT
+
+.mx-...
+.my-...
+.mt-...
+.mb-...
+.ml-...
+.mr-...
 ```
