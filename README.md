@@ -1,4 +1,4 @@
-# KDUI - Padding idea
+# KDUI - Padding idea (No longer to date, renaming branch to padding-margin)
 We upgraded padding from Bootstrap to another level! Now, you can set padding up to 128px!
 
 # Example
