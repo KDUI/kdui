@@ -1,0 +1,410 @@
+/*
+    __ __ ____  __  ______
+   / //_// __ \/ / / /  _/
+  / ,<  / / / / / / // /  
+ / /| |/ /_/ / /_/ // /   
+/_/ |_/_____/\____/___/   
+
+KDUI, made by Kléma & Dast
+Ver: 0.0.1 Alpha 
+Made with help of GitHub Copilot program :3
+
+*/
+
+/* Set Root CSS to your likings :) */
+:root {
+    /* --- FONTS - Best base fonts for your site (Default: Inter) --- */
+    --font-montserrat: "Montserrat", sans-serif;
+    --font-roboto: "Roboto", sans-serif;
+    --font-poppins: "Poppins", sans-serif;
+    --font-inter: "Inter", sans-serif;
+    --font-raleway: "Raleway", sans-serif;
+    --font-roboto-slab: "Roboto Slab", serif;
+    --font-open-sans: "Open Sans", sans-serif;
+    --font-lato: "Lato", sans-serif;
+    --font-roboto-condensed: "Roboto Condensed", sans-serif;
+    --font-source-sans-pro: "Source Sans Pro", sans-serif;
+    --font-oswald: "Oswald", sans-serif;
+    --font-ubuntu: "Ubuntu", sans-serif;
+    --font-nunito: "Nunito", sans-serif;
+    --font-nunito-sans: "Nunito Sans", sans-serif;
+    --font-merriweather: "Merriweather", serif;
+    --font-bebas-neue: "Bebas Neue", cursive;
+    --font-josefin-sans: "Josefin Sans", sans-serif;
+    --font-oxygen: "Oxygen", sans-serif;
+    --font-dm-sans: "DM Sans", sans-serif;
+    --font-source-code-pro: "Source Code Pro", monospace;
+
+    /* --- COLORS - Base colors for your site --- */
+}
+
+/* Imported content */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+/* Fix Default CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-inter);
+}
+
+/* Typography */
+
+.fs-3xl {
+    font-size: calc(1rem + 9.6vw);
+}
+
+.fs-2xl {
+    font-size: calc(1rem + 8.35vw);
+}
+
+.fs-xxl {
+    font-size: calc(1rem + 7.1vw);
+}
+
+.fs-xl {
+    font-size: calc(1rem + 5.85vw);
+}
+
+.fs-xs {
+    font-size: calc(1rem + 4.6vw);
+}
+
+.fs-lg {
+    font-size: calc(1rem + 3.35vw);
+}
+
+.fs-ls {
+    font-size: calc(1rem + 2.1vw);
+}
+
+.fs-md {
+    font-size: calc(1rem + 0.85vw);
+}
+
+.fs-sm {
+    font-size: calc(1rem + 0.025vw);
+}
+
+.fs-h1 {
+    font-size: calc(3.5rem + 1.23vw);
+}
+
+.fs-h2 {
+    font-size: calc(3rem + 1.23vw);
+}
+
+.fs-h3 {
+    font-size: calc(2.5rem + 1.23vw);
+}
+
+.fs-h4 {
+    font-size: calc(2rem + 1.23vw);
+}
+
+.fs-h5 {
+    font-size: calc(1.5rem + 1.23vw);
+}
+
+.fs-h6 {
+    font-size: calc(1rem + 1.23vw);
+}
+
+.fs-p {
+    font-size: calc(1rem + 0.025vw);
+}
+
+.fs-p-xl {
+    font-size: calc(1.20rem + 0.05vw);
+}
+
+/* Padding */
+
+.px-1 {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.px-2 {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.px-3 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.px-4 {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.px-5 {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.px-6 {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.px-7 {
+    padding-left: 48px;
+    padding-right: 48px;
+}
+
+.px-8 {
+    padding-left: 72px;
+    padding-right: 72px;
+}
+
+.px-9 {
+    padding-left: 96px;
+    padding-right: 96px;
+}
+
+.px-10 {
+    padding-left: 128px;
+    padding-right: 128px;
+}
+
+.py-1 {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.py-2 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.py-3 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.py-4 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.py-5 {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.py-6 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.py-7 {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.py-8 {
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+
+.py-9 {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.py-10 {
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+
+.pt-1 {
+    padding-top: 4px;
+}
+
+.pt-2 {
+    padding-top: 8px;
+}
+
+.pt-3 {
+    padding-top: 12px;
+}
+
+.pt-4 {
+    padding-top: 16px;
+}
+
+.pt-5 {
+    padding-top: 24px;
+}
+
+.pt-6 {
+    padding-top: 32px;
+}
+
+.pt-7 {
+    padding-top: 48px;
+}
+
+.pt-8 {
+    padding-top: 72px;
+}
+
+.pt-9 {
+    padding-top: 96px;
+}
+
+.pt-10 {
+    padding-top: 128px;
+}
+
+.pb-1 {
+    padding-bottom: 4px;
+}
+
+.pb-2 {
+    padding-bottom: 8px;
+}
+
+.pb-3 {
+    padding-bottom: 12px;
+}
+
+.pb-4 {
+    padding-bottom: 16px;
+}
+
+.pb-5 {
+    padding-bottom: 24px;
+}
+
+.pb-6 {
+    padding-bottom: 32px;
+}
+
+.pb-7 {
+    padding-bottom: 48px;
+}
+
+.pb-8 {
+    padding-bottom: 72px;
+}
+
+.pb-9 {
+    padding-bottom: 96px;
+}
+
+.pb-10 {
+    padding-bottom: 128px;
+}
+
+.pl-1 {
+    padding-left: 4px;
+}
+
+.pl-2 {
+    padding-left: 8px;
+}
+
+.pl-3 {
+    padding-left: 12px;
+}
+
+.pl-4 {
+    padding-left: 16px;
+}
+
+.pl-5 {
+    padding-left: 24px;
+}
+
+.pl-6 {
+    padding-left: 32px;
+}
+
+.pl-7 {
+    padding-left: 48px;
+}
+
+.pl-8 {
+    padding-left: 72px;
+}
+
+.pl-9 {
+    padding-left: 96px;
+}
+
+.pl-10 {
+    padding-left: 128px;
+}
+
+.pr-1 {
+    padding-right: 4px;
+}
+
+.pr-2 {
+    padding-right: 8px;
+}
+
+.pr-3 {
+    padding-right: 12px;
+}
+
+.pr-4 {
+    padding-right: 16px;
+}
+
+.pr-5 {
+    padding-right: 24px;
+}
+
+.pr-6 {
+    padding-right: 32px;
+}
+
+.pr-7 {
+    padding-right: 48px;
+}
+
+.pr-8 {
+    padding-right: 72px;
+}
+
+.pr-9 {
+    padding-right: 96px;
+}
+
+.pr-10 {
+    padding-right: 128px;
+}
+
+/* Small devices (landspace phones, 576px and up) */
+@media (min-width: 576px) {
+    .px-sm-test {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { ... }
+
+/* Large devices (laptops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* XL devices (desktop, 1200px and up) */
+@media (min-width: 1200px) { ... }
+
+/* XXL devices (large desktops, 16:9 FullHD, UHD, 2K, 4K, ..., 1400px and up) */
+@media (min-width: 1400px) { ... }
+
+/* Need custom breakpoint? Copy one of these and customize to your likings */
+/* Example: @media (min-width: 240px) { ... } */
